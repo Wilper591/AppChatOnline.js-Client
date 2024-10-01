@@ -1,0 +1,91 @@
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; /* 1REM = 10px */
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  --rojo: #b30303ab;
+  --blanco: #ffffffe5;
+  --gris: #00000000;
+}
+body {
+  background-color: rgba(0, 0, 0, 0.904);
+}
+main {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+header {
+  box-shadow: 5px 25px 15px 5px;
+}
+.barra {
+  font-size: 5rem;
+  text-align: center;
+  background-color: var(--rojo);
+  color: var(--blanco);
+  padding: 2rem;
+}
+.barra a h1 {
+  font-size: 5rem;
+  color: var(--blanco);
+}
+.barra h1 {
+  font-size: 5rem;
+  color: var(--blanco);
+}
+
+h2 {
+  color: var(--blanco);
+  font-size: 3rem;
+  text-align: center;
+  font-weight: bold;
+}
+.chatbox {
+  height: auto;
+  min-height: 50rem;
+  background-color: var(--blanco);
+  border-radius: 2rem;
+  border: 3px solid var(--rojo);
+  padding: 2rem;
+  margin: 2rem;
+}
+textarea {
+  border-radius: 2rem;
+  border: 3px solid var(--rojo);
+  padding: 2rem;
+  margin: 2rem;
+  font-size: 1.5rem;
+}
+label {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.formulario {
+  margin: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  box-shadow: 5px 5px 5px 15px;
+}
+
+footer {
+  background-color: var(--rojo);
+  color: var(--blanco);
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  padding: 2rem;
+}
+
+/* Clase para modificar sweet alert */
+.custom-swal-popup {
+  font-size: 1.5rem;
+}
